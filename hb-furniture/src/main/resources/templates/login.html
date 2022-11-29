@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/login/login-style.css">
+    <link rel="stylesheet" type="text/css" href="/assets/izitoast/dist/css/iziToast.css">
+    <link rel="stylesheet" type="text/css" href="/assets/izitoast/dist/css/iziToast.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/sweetalert2/sweetalert2.min.css">
+    <!--    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">-->
+    <link rel="stylesheet" href="/assets/css/home/style.css">
+    <style>
+        #btnRegister:hover {
+            background-color: rgba(255, 75, 43, 0.68);
+        }
+        #btnRegister {
+            width: 150px;
+            border-radius: 20px;
+            border: 1px solid #FF4B2B;
+            background-color: #FF4B2B;
+            color: #FFFFFF;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 12px 45px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: transform 80ms ease-in;
+
+        }
+    </style>
+</head>
+<body>
+<div class="container" id="container">
+    <div class="form-container sign-up-container">
+
+        <form >
+            <h1>Tạo tài khoản</h1>
+            <div class="social-container">
+                <a style="color: blue;" href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                <a style="color: rgb(118, 222, 43);" href="#" class="social"><i
+                        class="fab fa-google-plus-g"></i></a>
+                <a style="color: rgb(219, 187, 29);" href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+
+            <input type="text" placeholder="Full Name" id="fullName" required autocomplete="off"/>
+            <input type="text" placeholder="User name" id="username-reg"/>
+            <input type="password" placeholder="Password" id="pass-reg"/>
+            <input type="button" class="btn btn-outline-success" id="btnRegister" value="Đăng ký">
+        </form>
+
+
+
+
+
+
+    </div>
+
+
+
+
+    <div class="form-container sign-in-container">
+        <form action="#">
+            <h1>Đăng nhập</h1>
+            <div class="social-container">
+                <a style="color: blue;" href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                <a style="color: rgb(118, 222, 43);" href="#" class="social"><i
+                        class="fab fa-google-plus-g"></i></a>
+                <a style="color: rgb(219, 187, 29);" class="social"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <span>hoặc lấy tài khoản của bạn</span>
+            <input type="email" placeholder="User name" id="username-login"/>
+            <input type="password" placeholder="Password" id="pass-login"/>
+            <a href="#">Forgot your password?</a>
+            <button id="btnLogin" type="button">Đăng nhập</button>
+        </form>
+
+    </div>
+
+    <div class="overlay-container">
+        <div class="overlay">
+            <div class="overlay-panel overlay-left">
+                <h1>Chào mừng quý khách !</h1>
+                <p>Đăng nhập thông tin của quý khách</p>
+                <button class="ghost" id="login">Đăng nhập</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+                <h1>Kính chào quý khách !</h1>
+                <p>Nhập thông tin của quý khách và bắt đầu sử dụng dịch vụ của chúng tôi!</p>
+                <button class="ghost" id="register">Đăng ký</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+
+<script src="/assets/js/app.js"></script>
+<script src="/assets/jquery/jquery-3.6.1.min.js"></script>
+<script src="/assets/sweetalert2/sweetalert2@11.js"></script>
+<script src="/assets/izitoast/dist/js/iziToast.min.js"></script>
+<script src="/assets/izitoast/dist/js/iziToast.js"></script>
+
+
+<script>
+
+    const signUpButton = document.getElementById('register');
+    const signInButton = document.getElementById('login');
+    const container = document.getElementById('container');
+
+    signUpButton.addEventListener('click', () => {
+        container.classList.add("right-panel-active");
+    });
+
+    signInButton.addEventListener('click', () => {
+        container.classList.remove("right-panel-active");
+    });
+
+
+
+    let page = {
+        urls: {},
+        dialogs: {},
+        elements: {},
+        commands: {},
+        initializeEventControl: {}
+    }
+
+    page.elements.usernameLogin = $("#username-login");
+    page.elements.passLogin = $("#pass-login");
+    page.elements.btnLogin = $("#btnLogin");
+
+    page.elements.fullName = $("#fullName");
+    page.elements.usernameReg = $("#username-reg");
+    page.elements.passReg = $("#pass-reg");
+    page.elements.btnRegister = $("#btnRegister")
+
+    page.elements.login = $("#login");
+
+
+    page.elements.btnLogin.on("click", () => {
+        page.commands.login();
+    })
+
+
+    //  LOGIN  //
+    page.commands.login = () => {
+        let user = {
+            username: page.elements.usernameLogin.val(),
+            password: page.elements.passLogin.val()
+        }
+        $.ajax({
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            type: "POST",
+            url: "http://localhost:8080/api/auth/login",
+            data: JSON.stringify(user)
+        }).done((data) => {
+            App.IziToast.showSuccessAlertRight("Đăng nhập thành công.", "<b></b>", 3000);
+
+            setTimeout(function () {
+                window.location.href = "/";
+            }, 1500);
+        })
+            .fail((jqXHR) => {
+                App.SweetAlert.showErrorAlert("Tài khoản hoặc mật khẩu không đúng! Vui lòng kiểm tra lại!");
+
+            })
+    }
+    //   END LOGIN  //
+
+
+    // REGISTER //
+    page.elements.btnRegister.on("click", () => {
+        page.commands.register();
+    })
+
+    page.commands.register = () => {
+        let user = {
+            fullName: page.elements.fullName.val(),
+            username: page.elements.usernameReg.val(),
+            password: page.elements.passReg.val(),
+            role: {
+                id: "1",
+                code : "USER"
+            }
+        }
+        $.ajax({
+            type: "POST",
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            url: "http://localhost:8080/api/auth/register",
+            data: JSON.stringify(user)
+        }).done((data) => {
+            $('#username-login').val($('#username-reg').val());
+            $('#pass-login').val($('#pass-reg').val());
+            // App.IziToast.showErrorAlertLeft("Đăng ký tài khoản thành công", "<b></b>", 2000, "/");
+            App.IziToast.showSuccessAlertRight("Đăng nhập ký thành công.", "<b></b>", 3000);
+
+            setTimeout(function () {
+            }, 1500);
+            page.elements.login.click();
+        }).fail((jqXHR) => {
+            App.IziToast.showErrorAlertLeft("Đăng ký không thành công! Vui lòng kiểm tra lại !")
+        });
+    }
+    //  END REGISTER  //
+
+
+    page.commands.loadData = () => {
+
+    }
+
+    page.initializeEventControl = () => {
+
+    }
+
+    $(() => {
+        page.commands.loadData();
+        page.initializeEventControl();
+    });
+
+
+</script>
+</html>

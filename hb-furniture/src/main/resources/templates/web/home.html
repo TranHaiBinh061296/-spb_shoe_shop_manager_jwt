@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home Page</title>
+  <th:block th:replace="/layout/admin/head :: head"/>
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+
+<link rel="stylesheet" href="/assets/bootstrap/v5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="/assets/fontawesome/v6.2.0/css/all.min.css">
+<link rel="stylesheet" href="/assets/css/home/style.css">
+<link rel="stylesheet" href="/assets/sweetalert2/sweetalert2.min.css">
+<link rel="stylesheet" href="/assets/css/preview-image.css">
+<div>
+
+  <!-- Preloader -->
+  <!--  <div class="preloader flex-column justify-content-center align-items-center">-->
+  <!--    <img class="animation__shake" src="/assets/admin/dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">-->
+  <!--  </div>-->
+
+  <!-- Navbar -->
+  <th:block th:replace="/layout/admin/navbar :: navbar"/>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <th:block th:replace="/layout/admin/products/sidebar :: sidebar"/>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+
+
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+
+            <div class="container-fluid">
+
+              <!-- start page title -->
+
+              <!-- end page title -->
+
+              <div class="row">
+                <div class="col-xl-3 col-sm-6">
+                  <div class="card">
+                    <div class="card-body widget-style-2">
+                      <div class="media">
+                        <div class="media-body align-self-center">
+                          <h2 class="my-0"><span data-plugin="counterup">50</span></h2>
+                          <p class="mb-0">Daily Visits</p>
+                        </div>
+                        <i class="ion-md-eye text-pink bg-light"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-3 col-sm-6">
+                  <div class="card">
+                    <div class="card-body widget-style-2">
+                      <div class="media">
+                        <div class="media-body align-self-center">
+                          <h2 class="my-0"><span data-plugin="counterup">12056</span></h2>
+                          <p class="mb-0">Sales</p>
+                        </div>
+                        <i class="ion-md-paper-plane text-purple bg-light"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-3 col-sm-6">
+                  <div class="card">
+                    <div class="card-body widget-style-2">
+                      <div class="media">
+                        <div class="media-body align-self-center">
+                          <h2 class="my-0"><span data-plugin="counterup">1268</span></h2>
+                          <p class="mb-0">New Orders</p>
+                        </div>
+                        <i class="ion-ios-pricetag text-info bg-light"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-3 col-sm-6">
+                  <div class="card">
+                    <div class="card-body widget-style-2">
+                      <div class="media">
+                        <div class="media-body align-self-center">
+                          <h2 class="my-0"><span data-plugin="counterup">145</span></h2>
+                          <p class="mb-0">New Users</p>
+                        </div>
+                        <i class="mdi mdi-comment-multiple text-primary bg-light"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-6">
+
+                  <div class="card">
+                    <div class="card-header py-3 bg-transparent">
+                      <div class="card-widgets">
+                        <a href="javascript:;" data-toggle="reload"><i class="mdi mdi-refresh"></i></a>
+                        <a data-toggle="collapse" href="#cardCollpase1" role="button" aria-expanded="false" aria-controls="cardCollpase1"><i class="mdi mdi-minus"></i></a>
+                        <a href="#" data-toggle="remove"><i class="mdi mdi-close"></i></a>
+                      </div>
+                      <h5 class="header-title mb-2"> Yearly Sales Report</h5>
+                    </div>
+                    <div id="cardCollpase1" class="collapse show">
+                      <div class="card-body">
+                        <div id="morris-area-example" class="morris-charts" dir="ltr" style="height: 320px; position: relative; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg height="320" version="1.1" width="474" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="overflow: hidden; position: relative; top: -0.40625px;"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.3.0</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs><text x="32.84765625" y="281" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">0</tspan></text><path fill="none" stroke="#6c7897" d="M45.34765625,281H448.5" stroke-opacity="0.2" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="32.84765625" y="217" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">50</tspan></text><path fill="none" stroke="#6c7897" d="M45.34765625,217H448.5" stroke-opacity="0.2" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="32.84765625" y="153" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">100</tspan></text><path fill="none" stroke="#6c7897" d="M45.34765625,153H448.5" stroke-opacity="0.2" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="32.84765625" y="89" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">150</tspan></text><path fill="none" stroke="#6c7897" d="M45.34765625,89H448.5" stroke-opacity="0.2" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="32.84765625" y="25" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">200</tspan></text><path fill="none" stroke="#6c7897" d="M45.34765625,25H448.5" stroke-opacity="0.2" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="448.5" y="293.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2015</tspan></text><text x="381.33861000969875" y="293.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2014</tspan></text><text x="314.1772200193975" y="293.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2013</tspan></text><text x="246.83182622090368" y="293.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2012</tspan></text><text x="179.67043623060246" y="293.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2011</tspan></text><text x="112.50904624030123" y="293.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2010</tspan></text><text x="45.34765625" y="293.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2009</tspan></text><path fill="#78c4c5" stroke="none" d="M45.34765625,242.6C62.13800374757531,207.39999999999998,95.71869874272592,111.39999999999998,112.50904624030123,101.79999999999998C129.29939373787653,92.19999999999999,162.88008873302715,165.8,179.67043623060246,165.8C196.46078372817777,165.8,230.04147872332837,101.79999999999998,246.83182622090368,101.79999999999998C263.66817467052715,101.79999999999998,297.34087156977404,165.8,314.1772200193975,165.8C330.96756751697285,165.8,364.5482625121234,111.39999999999998,381.33861000969875,101.79999999999998C398.1289575072741,92.19999999999999,431.70965250242466,92.19999999999999,448.5,89L448.5,281L45.34765625,281Z" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></path><path fill="none" stroke="#3bc0c3" d="M45.34765625,242.6C62.13800374757531,207.39999999999998,95.71869874272592,111.39999999999998,112.50904624030123,101.79999999999998C129.29939373787653,92.19999999999999,162.88008873302715,165.8,179.67043623060246,165.8C196.46078372817777,165.8,230.04147872332837,101.79999999999998,246.83182622090368,101.79999999999998C263.66817467052715,101.79999999999998,297.34087156977404,165.8,314.1772200193975,165.8C330.96756751697285,165.8,364.5482625121234,111.39999999999998,381.33861000969875,101.79999999999998C398.1289575072741,92.19999999999999,431.70965250242466,92.19999999999999,448.5,89" stroke-width="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><circle cx="45.34765625" cy="242.6" r="7" fill="#3bc0c3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="112.50904624030123" cy="101.79999999999998" r="4" fill="#3bc0c3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="179.67043623060246" cy="165.8" r="4" fill="#3bc0c3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="246.83182622090368" cy="101.79999999999998" r="4" fill="#3bc0c3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="314.1772200193975" cy="165.8" r="4" fill="#3bc0c3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="381.33861000969875" cy="101.79999999999998" r="4" fill="#3bc0c3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="448.5" cy="89" r="4" fill="#3bc0c3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><path fill="#3d434c" stroke="none" d="M45.34765625,268.2C62.13800374757531,247.39999999999998,95.71869874272592,191.4,112.50904624030123,185C129.29939373787653,178.6,162.88008873302715,217,179.67043623060246,217C196.46078372817777,217,230.04147872332837,185,246.83182622090368,185C263.66817467052715,185,297.34087156977404,217,314.1772200193975,217C330.96756751697285,217,364.5482625121234,191.4,381.33861000969875,185C398.1289575072741,178.6,431.70965250242466,170.60000000000002,448.5,165.8L448.5,281L45.34765625,281Z" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></path><path fill="none" stroke="#2f353f" d="M45.34765625,268.2C62.13800374757531,247.39999999999998,95.71869874272592,191.4,112.50904624030123,185C129.29939373787653,178.6,162.88008873302715,217,179.67043623060246,217C196.46078372817777,217,230.04147872332837,185,246.83182622090368,185C263.66817467052715,185,297.34087156977404,217,314.1772200193975,217C330.96756751697285,217,364.5482625121234,191.4,381.33861000969875,185C398.1289575072741,178.6,431.70965250242466,170.60000000000002,448.5,165.8" stroke-width="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><circle cx="45.34765625" cy="268.2" r="7" fill="#2f353f" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="112.50904624030123" cy="185" r="4" fill="#2f353f" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="179.67043623060246" cy="217" r="4" fill="#2f353f" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="246.83182622090368" cy="185" r="4" fill="#2f353f" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="314.1772200193975" cy="217" r="4" fill="#2f353f" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="381.33861000969875" cy="185" r="4" fill="#2f353f" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="448.5" cy="165.8" r="4" fill="#2f353f" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle></svg><div class="morris-hover morris-default-style" style="left: 0.449206px; top: 171px;"><div class="morris-hover-row-label">2009</div><div class="morris-hover-point" style="color: #2f353f">
+                          Series A:
+                          10
+                        </div><div class="morris-hover-point" style="color: #3bc0c3">
+                          Series B:
+                          20
+                        </div></div></div>
+                        <div class="row text-center mt-4">
+                          <div class="col-sm-3 col-6">
+                            <h5>$ 126</h5>
+                            <small class="text-muted"> Today's Sales</small>
+                          </div>
+                          <div class="col-sm-3 col-6">
+                            <h5>$ 967</h5>
+                            <small class="text-muted">This Week's Sales</small>
+                          </div>
+                          <div class="col-sm-3 col-6">
+                            <h5>$ 4500</h5>
+                            <small class="text-muted">This Month's Sales</small>
+                          </div>
+                          <div class="col-sm-3 col-6">
+                            <h5>$ 87,000</h5>
+                            <small class="text-muted">This Year's Sales</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end card-->
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="portlet">
+                    <div class="card">
+                      <div class="card-header py-3 bg-transparent">
+                        <div class="card-widgets">
+                          <a href="javascript:;" data-toggle="reload"><i class="mdi mdi-refresh"></i></a>
+                          <a data-toggle="collapse" href="#cardCollpase2" role="button" aria-expanded="false" aria-controls="cardCollpase2"><i class="mdi mdi-minus"></i></a>
+                          <a href="#" data-toggle="remove"><i class="mdi mdi-close"></i></a>
+                        </div>
+                        <h5 class="header-title mb-2">  Weekly Sales Report</h5>
+                      </div>
+                      <div id="cardCollpase2" class="collapse show">
+                        <div class="card-body">
+                          <div id="morris-bar-example" class="morris-charts" dir="ltr" style="height: 320px; position: relative; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg height="320" version="1.1" width="474" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="overflow: hidden; position: relative; left: -0.5px; top: -0.40625px;"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.3.0</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs><text x="32.84765625" y="281" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">0</tspan></text><path fill="none" stroke="#6c7897" d="M45.34765625,281H448.5" stroke-opacity="0.2" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="32.84765625" y="217" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">25</tspan></text><path fill="none" stroke="#6c7897" d="M45.34765625,217H448.5" stroke-opacity="0.2" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="32.84765625" y="153" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">50</tspan></text><path fill="none" stroke="#6c7897" d="M45.34765625,153H448.5" stroke-opacity="0.2" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="32.84765625" y="89" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">75</tspan></text><path fill="none" stroke="#6c7897" d="M45.34765625,89H448.5" stroke-opacity="0.2" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="32.84765625" y="25" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">100</tspan></text><path fill="none" stroke="#6c7897" d="M45.34765625,25H448.5" stroke-opacity="0.2" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="414.9039713541667" y="293.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Day6</tspan></text><text x="280.51985677083337" y="293.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Day4</tspan></text><text x="146.1357421875" y="293.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Day2</tspan></text><rect x="53.746663411458336" y="89" width="14.798014322916666" height="192" rx="0" ry="0" fill="#3bc0c3" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="71.544677734375" y="114.6" width="14.798014322916666" height="166.4" rx="0" ry="0" fill="#2f353f" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="89.34269205729166" y="229.8" width="14.798014322916666" height="51.19999999999999" rx="0" ry="0" fill="#dcdcdc" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="120.938720703125" y="153" width="14.798014322916666" height="128" rx="0" ry="0" fill="#3bc0c3" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="138.73673502604166" y="178.6" width="14.798014322916666" height="102.4" rx="0" ry="0" fill="#2f353f" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="156.53474934895831" y="153" width="14.798014322916666" height="128" rx="0" ry="0" fill="#dcdcdc" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="188.13077799479169" y="89" width="14.798014322916666" height="192" rx="0" ry="0" fill="#3bc0c3" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="205.92879231770834" y="114.6" width="14.798014322916666" height="166.4" rx="0" ry="0" fill="#2f353f" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="223.726806640625" y="37.79999999999998" width="14.798014322916666" height="243.20000000000002" rx="0" ry="0" fill="#dcdcdc" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="255.32283528645834" y="153" width="14.798014322916666" height="128" rx="0" ry="0" fill="#3bc0c3" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="273.120849609375" y="178.6" width="14.798014322916666" height="102.4" rx="0" ry="0" fill="#2f353f" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="290.9188639322917" y="224.68" width="14.798014322916666" height="56.31999999999999" rx="0" ry="0" fill="#dcdcdc" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="322.514892578125" y="89" width="14.798014322916666" height="192" rx="0" ry="0" fill="#3bc0c3" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="340.3129069010417" y="114.6" width="14.798014322916666" height="166.4" rx="0" ry="0" fill="#2f353f" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="358.1109212239583" y="137.64" width="14.798014322916666" height="143.36" rx="0" ry="0" fill="#dcdcdc" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="389.7069498697917" y="25" width="14.798014322916666" height="256" rx="0" ry="0" fill="#3bc0c3" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="407.50496419270837" y="50.599999999999994" width="14.798014322916666" height="230.4" rx="0" ry="0" fill="#2f353f" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="425.302978515625" y="127.4" width="14.798014322916666" height="153.6" rx="0" ry="0" fill="#dcdcdc" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect></svg><div class="morris-hover morris-default-style" style="left: 365.209px; top: 107px;"><div class="morris-hover-row-label">Day6</div><div class="morris-hover-point" style="color: #3bc0c3">
+                            Series A:
+                            100
+                          </div><div class="morris-hover-point" style="color: #2f353f">
+                            Series B:
+                            90
+                          </div><div class="morris-hover-point" style="color: #dcdcdc">
+                            Series c:
+                            60
+                          </div></div></div>
+                          <div class="row text-center mt-4">
+                            <div class="col-sm-3 col-6">
+                              <h5>$ 126</h5>
+                              <small class="text-muted"> Today's Sales</small>
+                            </div>
+                            <div class="col-sm-3 col-6">
+                              <h5>$ 967</h5>
+                              <small class="text-muted">This Week's Sales</small>
+                            </div>
+                            <div class="col-sm-3 col-6">
+                              <h5>$ 4500</h5>
+                              <small class="text-muted">This Month's Sales</small>
+                            </div>
+                            <div class="col-sm-3 col-6">
+                              <h5>$ 87,000</h5>
+                              <small class="text-muted">This Year's Sales</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end card-->
+                  </div>
+                </div>
+              </div>
+              <!-- /Portlet -->
+
+              <div class="row">
+
+
+                <!-- end col -->
+
+                <!-- end col -->
+
+              </div>
+              <!-- End row -->
+
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <div class="loader hide"></div>
+
+  <th:block th:replace="/layout/admin/footer :: footer" />
+
+</div>
+<!-- ./wrapper -->
+
+<!--Create Modal -->
+
+
+<th:block th:replace="/layout/admin/products/scriptProducts :: scriptProducts"/>
+</body>
+</html>

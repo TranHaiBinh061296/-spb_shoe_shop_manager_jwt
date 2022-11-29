@@ -1,0 +1,115 @@
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<th:block th:fragment="sidebar">
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <!-- Brand Logo -->
+        <span href="index3.html" class="brand-link">
+            <span class="brand-text font-weight-light" style="text-align: center";>Xin chào <th:block th:text="${username}"/></span>
+        </span>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <nav class="mt-2">
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-house-chimney"></i>
+                            <p>
+                                Trang chủ
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="/operator/home" class="nav-link">
+                                    <p>Trang bán hàng</p>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-user-pen"></i>
+                            <p>
+                                Quản lý nhân viên
+
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="/admin/" class="nav-link">
+                                    <p>Danh sách nhân viên</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-truck-fast"></i>
+                            <p>
+                                Quản lý sản phẩm
+
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview" >
+                            <li class=" nav-item">
+                                <a href="/operator/products" class="nav-link">
+                                    <p>Danh sách sản phẩm</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <i class="fa-solid fa-users"></i>
+                            <p>
+                                Quản lý khách hàng
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="/operator/customers" class="nav-link">
+                                    <p>Danh sách khách hàng</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-file-invoice"></i>
+                            <p>
+                                Quản lý tài khoản
+
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="pages/forms/general.html" class="nav-link">
+                                    <p>Danh sách tài khoản</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="pages/forms/advanced.html" class="nav-link">
+                                    <p>Chức năng</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/logout" class="nav-link">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <p>
+                                Đăng xuất
+                            </p>
+                        </a>
+
+                    </li>
+
+                </ul>
+            </nav>
+            <!-- /.sidebar-menu -->
+        </div>
+        <!-- /.sidebar -->
+    </aside>
+</th:block>
